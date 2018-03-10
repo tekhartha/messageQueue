@@ -1,6 +1,5 @@
 # messageQueue
-IPC message queue
-utterly horrifying
+IPC message queue. utterly horrifying
 
 to run in terminal:
 1) g++ -std=c++11 -o receiver .[filepath]/receiver.cpp
