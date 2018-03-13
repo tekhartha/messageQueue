@@ -24,8 +24,11 @@ int main(int argc, char **argv) // parameters in main to direct program
 	
 	cout << "Sender, PID " << getpid() << " begins execution" << endl;
 	cout << "Enter a message to send: " << endl;
-	cin >> userMsg;
-	strcpy(msg.greeting, userMsg.c_str()); // strcpy(destination, source)
+	getline(cin, userMsg); // get input from user
+	/*
+		strcpy(destination, source). c_str() to tokenize string into const char array
+	*/
+	strcpy(msg.greeting, userMsg.c_str());
 	
 	/*
 		Send message to message queue with id qid and mtype 113.
